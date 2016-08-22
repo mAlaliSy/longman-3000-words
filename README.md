@@ -1,4 +1,4 @@
-# longman-3000-words
+# Longman 3000 Words
 Android app displaying most frequent English words with their translations to Arabic
  
  
