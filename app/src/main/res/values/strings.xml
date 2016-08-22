@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">أهم الكلمات الانجليزية</string>
+    <string name="title_activity_main">أهم الكلمات الانجليزية</string>
+    <string name="title_activity_show_word">أهم الكلمات الإنجليزية</string>
+    <string name="title_activity_test">اختبر نفسك</string>
+    <string name="title_activity_start_test">StartTest</string>
+    <string name="title_activity_test_result">نتيجة الإختبار</string>
+    <string name="title_activity_help">مساعدة</string>
+
+
+
+    <string name="words">الكلمات</string>
+    <string name="memorized_words">الكلمات المحفوظة</string>
+    <string name="test">إختبار</string>
+
+    <string name="btn_important">الأهمية</string>
+    <string name="btn_search">بحث</string>
+    <string name="search_hint">الكلمة او معناها بالعربي</string>
+    <string name="btn_cancel">إلغاء</string>
+    <string name="btn_fav">عرض الكلمات</string>
+    <string name="rad_all">كل الكلمات</string>
+    <string name="rad_fav">الغير محفوظة فقط</string>
+    <string name="words_num">عدد الكلمات : </string>
+
+
+    <string name="fav_num">عدد الكلمات المحفوظة : </string>
+
+    <string name="US">US</string>
+    <string name="UK">UK</string>
+
+
+    <string name="testYourSelf">اختبر نفسك</string>
+    <string name="words_included">الكلمات التي يشملها الإختبار : </string>
+    <string name="ques_num">عدد الأسئلة : </string>
+    <string name="start_quiz">ابدأ الإختبار</string>
+
+
+    <string name="result">النتيجة</string>
+    <string name="wrong_ques">أسئلةأخطأت الإجابة عنها : </string>
+    <string name="percent100">ممتاز ، لقد أجبت إجابة صحيحة على كل الأسئلة</string>
+    <string name="percent90">ممتاز</string>
+    <string name="percent80">جيد</string>
+    <string name="percent70">لا بأس</string>
+    <string name="percentFailed">اجتهد وحاول مرة أخرى</string>
+
+    <string name="help">مساعدة</string>
+    <string name="about">هذه الكلمات مأخوذة من كتاب Longman Communication 3000 . \nوبحسب الكتاب فإن هذه الكلمات تمثل الـ 3000 كلمة الأكثر تكرارا في اللغة المنطوقة والمكتوبة . \n وبحسب تحاليل Longman Corpus Network فإن هذه الـ 3000 كلمة تمثل 86% من اللغة المكتوبة والمنطوقة .</string>
+    <string name="symbols_meaning">معاني الرموز : </string>
+    <string name="S1">S1: من بين 1000 كلمة الأكثر تكرارا في مهارة التحدث</string>
+    <string name="S2">S2: من بين 2000 كلمة الأكثر تكرارا في مهارة التحدث</string>
+    <string name="S3">S3: من بين 3000 كلمة الأكثر تكرارا في مهارة التحدث</string>
+    <string name="W1">W1: من بين 1000 كلمة الأكثر تكرارا في مهارة الكتابة</string>
+    <string name="W2">W2: من بين 2000 كلمة الأكثر تكرارا في مهارة الكتابة</string>
+    <string name="W3">W3: من بين 3000 كلمة الأكثر تكرارا في مهارة الكتابة</string>
+    <string name="note">ملاحظة مهمة : </string>
+    <string name="noteText">. تمت الترجمة تلقائيا من ترجمة جوجل لذلك قد توجد أخطاء .. سنعمل على تعديلها في التحديثات القادمة </string>
+    <string name="btnRate">تقييم التطبيق</string>
+    <string name="btnShare">مشاركة التطبيق</string>
+    <string name="btnOurApps">تطبيقاتنا</string>
+
+
+    <string name="share_message">قم بتحميل تحميل تطبيق Longman Communication 3000 ، أهم 3000 كلمة في اللغة الانجليزية :https://play.google.com/store/apps/details?id=com.shamdroid.longman3000words</string>
+
+    <string name="bannerId">ca-app-pub-8667468283392975/9538903441</string>
+    <string name="iniId">ca-app-pub-8667468283392975/4969103040</string>
+
+
+
+
+
+
+
+</resources>

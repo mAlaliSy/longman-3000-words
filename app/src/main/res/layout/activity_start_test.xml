@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.shamdroid.most3000words.StartTest"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/txtCurrentQ"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=" / "
+            android:id="@+id/textView12"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/txtAllQuesNum"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="70"
+        android:gravity="center">
+
+        <android.support.v7.widget.CardView
+            android:orientation="vertical"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/txtWord"
+                android:gravity="center"
+                android:textColor="@color/bg_light"
+                android:padding="20dp" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adStartTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/bannerId"
+        android:layout_gravity="center">
+    </com.google.android.gms.ads.AdView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="15"
+        android:weightSum="100">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="New Button"
+            android:id="@+id/btnB"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="50"
+            android:background="@drawable/button_bg"
+            android:stateListAnimator="@null"
+            android:textColor="#fff" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="New Button"
+            android:id="@+id/btnA"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="50"
+            android:background="@drawable/button_bg"
+            android:stateListAnimator="@null"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="15"
+        android:weightSum="100">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="New Button"
+            android:id="@+id/btnD"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="50"
+            android:background="@drawable/button_bg"
+            android:stateListAnimator="@null"
+            android:textColor="#fff" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="New Button"
+            android:id="@+id/btnC"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="50"
+            android:background="@drawable/button_bg"
+            android:stateListAnimator="@null"
+            android:textColor="#fff" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.shamdroid.most3000words.Test"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    android:weightSum="100">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="100">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/words_included"
+            android:id="@+id/textView9"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp" />
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="100"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/memorized_words"
+                android:id="@+id/radFavTest"
+                android:layout_gravity="right"
+                android:layout_weight="50"
+                android:gravity="center_vertical|right"
+                android:textSize="15dp"
+                android:paddingRight="10dp"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/rad_all"
+                android:id="@+id/radAllTest"
+                android:layout_weight="50"
+                android:gravity="center_vertical|right"
+                android:textSize="15dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:checked="true" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/ques_num"
+            android:id="@+id/textView10"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinQuesNum"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_quiz"
+            android:id="@+id/btnStartTest"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_bg"
+            android:paddingRight="75dp"
+            android:paddingLeft="75dp"
+            android:layout_marginTop="30dp"
+            android:textSize="18dp"
+            android:stateListAnimator="@null"
+            android:textColor="#fff" />
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/bannerId"
+        android:layout_gravity="center">
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>

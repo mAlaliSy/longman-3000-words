@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shamdroid.most3000words" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.shamdroid.most3000words.Main"
+            android:label="@string/title_activity_main"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.shamdroid.most3000words.ShowWord"
+            android:label="@string/title_activity_show_word" >
+            <intent-filter>
+                <action android:name="com.shamdroid.longman3000words.ShowWords" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.shamdroid.most3000words.Test"
+            android:label="@string/title_activity_test" >
+            <intent-filter>
+                <action android:name="com.shamdroid.longman3000words.Test" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.shamdroid.most3000words.StartTest"
+            android:label="@string/title_activity_start_test" >
+            <intent-filter>
+                <action android:name="com.shamdroid.longman3000words.StartTest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.shamdroid.most3000words.TestResult"
+            android:label="@string/title_activity_test_result" >
+            <intent-filter>
+                <action android:name="com.shamdroid.longman3000words.TestResult" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.shamdroid.most3000words.Help"
+            android:label="@string/title_activity_help" >
+            <intent-filter>
+                <action android:name="com.shamdroid.longman3000words.Help" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

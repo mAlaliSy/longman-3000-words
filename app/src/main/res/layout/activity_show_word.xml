@@ -1,0 +1,241 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.shamdroid.most3000words.ShowWord"
+    android:background="@color/bg"
+    android:orientation="vertical">
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar_showWords"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:weightSum="100"
+        android:layout_margin="10dp"
+        android:gravity="center">
+
+
+
+        <android.support.v7.widget.CardView
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="20dp">
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="abandon v W3"
+                        android:id="@+id/txtEnP"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/bg_light"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:layout_marginTop="2dp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="التخلي عن"
+                        android:id="@+id/txtArP"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/bg_light"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#dbdbdb"
+                        android:layout_margin="5dp"></LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:weightSum="100"
+                        android:layout_margin="2dp">
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/shBtnAMinus"
+                            android:src="@drawable/a_minus"
+                            android:scaleType="fitCenter"
+                            android:background="@drawable/btn_bg_gray"
+                            android:layout_marginBottom="0dp"
+                            android:layout_weight="20"
+                            android:padding="5dp" />
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/shBtnAPlus"
+                            android:src="@drawable/a_plus"
+                            android:scaleType="fitCenter"
+                            android:background="@drawable/btn_bg_gray"
+                            android:layout_marginBottom="0dp"
+                            android:layout_weight="20"
+                            android:padding="5dp" />
+
+                        <ToggleButton
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/tbtnFav"
+                            android:clickable="true"
+                            android:layout_weight="20"
+                            android:textOff=""
+                            android:textOn=""
+                            android:checked="false"
+                            android:stateListAnimator="@null"
+                            android:background="@drawable/fav_check" />
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/shBtnCopy"
+                            android:src="@drawable/copy"
+                            android:scaleType="fitCenter"
+                            android:background="@drawable/btn_bg_gray"
+                            android:layout_marginBottom="0dp"
+                            android:layout_weight="20"
+                            android:padding="5dp" />
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/shBtnShare"
+                            android:src="@drawable/share"
+                            android:scaleType="fitCenter"
+                            android:background="@drawable/btn_bg_gray"
+                            android:layout_marginBottom="0dp"
+                            android:layout_weight="20"
+                            android:padding="5dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adShowWords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/bannerId"
+        android:layout_gravity="center">
+    </com.google.android.gms.ads.AdView>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="20"
+        android:background="@color/bg"
+        android:weightSum="100"
+        android:gravity="start">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/shBtnNext"
+            android:padding="10dp"
+            android:layout_weight="33"
+            android:scaleType="fitCenter"
+            android:src="@drawable/left"
+            android:background="@drawable/button_bg" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="34"
+            android:background="@color/black"
+            android:weightSum="100">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:id="@+id/imageView"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="50"
+                android:src="@drawable/mic"
+                android:padding="7dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="50"
+                android:weightSum="100"
+                android:padding="0dp">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/UK"
+                    android:id="@+id/btnSpeechUK"
+                    android:layout_weight="50"
+                    android:background="@drawable/button_bg"
+                    android:stateListAnimator="@null"
+                    android:textSize="18dp"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/US"
+                    android:id="@+id/btnSpeechUS"
+                    android:layout_weight="50"
+                    android:background="@drawable/button_bg"
+                    android:stateListAnimator="@null"
+                    android:textSize="18dp"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/shBtnPrev"
+            android:padding="10dp"
+            android:layout_weight="33"
+            android:scaleType="fitCenter"
+            android:src="@drawable/right"
+            android:background="@drawable/button_bg" />
+
+    </LinearLayout>
+</LinearLayout>

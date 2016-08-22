@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.shamdroid.most3000words.Words"
+    android:background="@color/bg"
+    android:weightSum="100"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:weightSum="100"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_important"
+            android:id="@+id/btnImportant"
+            android:layout_weight="33"
+            android:background="@drawable/btn_dark"
+            android:textColor="#fff" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_search"
+            android:id="@+id/btnSearch"
+            android:layout_weight="34"
+            android:background="@drawable/btn_dark"
+            android:textColor="#fff" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_fav"
+            android:id="@+id/btnFav"
+            android:layout_weight="33"
+            android:background="@drawable/btn_dark"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:weightSum="100"
+        android:id="@+id/laySpin"
+        android:visibility="gone">
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/spinImportant"
+            android:layout_weight="100" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:id="@+id/laySearch"
+        android:visibility="gone"
+        android:weightSum="100"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_cancel"
+            android:id="@+id/btnCancel"
+            android:background="@drawable/btn_dark"
+            android:layout_margin="10dp"
+            android:stateListAnimator="@null"
+            android:textColor="#fff" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/etextSearch"
+            android:layout_weight="100"
+            android:gravity="center"
+            android:hint="@string/search_hint" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:weightSum="100"
+        android:id="@+id/layFav"
+        android:visibility="gone">
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="100">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/rad_fav"
+                android:id="@+id/radFav"
+                android:layout_weight="50"
+                android:gravity="center_vertical|right"
+                android:paddingRight="5dp"
+                android:textSize="15dp"
+                android:textColor="#fff" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/rad_all"
+                android:id="@+id/radAll"
+                android:layout_weight="50"
+                android:gravity="center_vertical|right"
+                android:paddingRight="5dp"
+                android:textSize="15dp"
+                android:textColor="#fff" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/words_num"
+        android:id="@+id/txtWordsNum"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="2dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/wordsRec"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp" />
+
+</LinearLayout>
