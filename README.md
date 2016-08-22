@@ -8,6 +8,7 @@ Android app displaying most frequent English words with their translations to Ar
  
 ##Contact Us 
  If you have any questions or suggestions please don't hesitate to email us on [m.alali.sy@gmail.com](mailto:m.alali.sy@gmail.com)
+ 
 
 
 # Licence
