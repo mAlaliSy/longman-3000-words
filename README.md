@@ -12,7 +12,7 @@ Android app displaying most frequent English words with their translations to Ar
 
 
 
-# Licence
+# Licence 
 ```
 The MIT Licence
 
